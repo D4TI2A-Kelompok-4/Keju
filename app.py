@@ -13,3 +13,9 @@ def show_post(post_id):
 @app.route('/crot', methods=['POST'])
 def login():
 	return request.form['anu']
+
+@app.route("/input/pekerjaan",methods=['GET','POST'])
+def hello():
+    # return "Hello World!"
+    value = request.json['pekerjaan'][0]
+    return value

@@ -31,7 +31,16 @@ def pekerjaan():
 		},
 		{
 			'bidang':'olahraga',
+			'profesi':'pemain bulutangkis'
+		},
+		{
+<<<<<<< HEAD
+			'bidang':'olahraga',
 			'profesi':'pemain sepak bola'
+=======
+			'bidang':'kesehatan',
+			'profesi':'bidan'
+>>>>>>> 9508c75c55811fa8cb56c178dad8c35e211e769a
 		}
 	]
 	return jsonify({'daftar pekerjaan':pekerjaan})

@@ -28,7 +28,11 @@ def pekerjaan():
 		{
 			'bidang':'pendidikan',
 			'profesi':'guru'
+		},
+		{
+			'bidang':'olahraga',
+			'profesi':'pemain sepak bola'
 		}
 	]
-	return jsonify({'daftar pekerjaan':'pekerjaan'})
+	return jsonify({'daftar pekerjaan':pekerjaan})
 	

@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 @app.route('/<gurih>')
@@ -14,8 +14,16 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route("/input/pekerjaan",methods=['GET','POST'])
-def hello():
-    # return "Hello World!"
-    value = request.json['pekerjaan'][0]
-    return value
+@app.route("/input/pekerjaan")
+def pekerjaan():
+	return jsonify(
+	pekerjaan="Dokter",
+	tempat_kerja="Rumah Sakit"
+	)
+
+@app.route("/input/pekerjaan2")
+def pekerjaan2():
+	return jsonify(
+	pekerjaan="Dosen",
+	tempat_kerja="Kampus"
+	)

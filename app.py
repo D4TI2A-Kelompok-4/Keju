@@ -16,16 +16,19 @@ def login():
 
 @app.route("/input/pekerjaan")
 def pekerjaan():
-	return jsonify(
-	nama="farhan",
-	pekerjaan="Dokter",
-	tempat_kerja="Rumah Sakit"
-	)
-
-@app.route("/input/pekerjaan2")
-def pekerjaan2():
-	return jsonify(
-	nama="farhan",
-	pekerjaan="Dosen",
-	tempat_kerja="Kampus"
-	)
+	pekerjaan = [
+		{
+			'bidang':'pendidikan',
+			'profesi':'dosen'
+		},
+		{
+			'bidang':'kesehatan',
+			'profesi':'dokter'
+		},
+		{
+			'bidang':'pendidikan',
+			'profesi':'guru'
+		}
+	]
+	return jsonify({'daftar pekerjaan':'pekerjaan'})
+	

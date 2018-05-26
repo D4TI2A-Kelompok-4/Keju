@@ -17,6 +17,7 @@ def login():
 @app.route("/input/pekerjaan")
 def pekerjaan():
 	return jsonify(
+	nama="farhan",
 	pekerjaan="Dokter",
 	tempat_kerja="Rumah Sakit"
 	)
@@ -24,6 +25,7 @@ def pekerjaan():
 @app.route("/input/pekerjaan2")
 def pekerjaan2():
 	return jsonify(
+	nama="farhan",
 	pekerjaan="Dosen",
 	tempat_kerja="Kampus"
 	)

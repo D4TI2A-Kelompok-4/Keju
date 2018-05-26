@@ -34,6 +34,10 @@ def pekerjaan():
 			'profesi':'pemain bulutangkis'
 		},
 		{
+			'bidang':'olahraga',
+			'profesi':'pemain voli'
+		},
+		{
 <<<<<<< HEAD
 			'bidang':'olahraga',
 			'profesi':'pemain sepak bola'

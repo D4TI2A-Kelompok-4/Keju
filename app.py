@@ -57,6 +57,10 @@ def pekerjaan():
 			'bidang':'pemerintahan',
 			'profesi':'polisi'
 		}
+		{
+			'bidang':'hukum',
+			'profesi':'hakim'
+		}
 	]
 	return jsonify({'daftar pekerjaan':pekerjaan})
 	

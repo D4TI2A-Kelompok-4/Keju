@@ -81,6 +81,10 @@ def pekerjaan():
 			'bidang':'wiraswasta',
 			'profesi':'pedagang'
 		},
+		{
+			'bidang':'wiraswasta',
+			'profesi':'buruh'
+		},
 	]
 	return jsonify({'daftar pekerjaan':pekerjaan})
 	

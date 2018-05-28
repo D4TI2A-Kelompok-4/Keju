@@ -62,6 +62,10 @@ def pekerjaan():
 			'profesi':'hakim'
 		},
 		{
+			'bidang':'hukum',
+			'profesi':'jaksa'
+		},
+		{
 			'bidang':'wiraswasta',
 			'profesi':'petani'
 		},
